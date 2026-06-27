@@ -398,10 +398,6 @@ GitHub
 
 https://github.com/prashik142
 
-LinkedIn
-
-(Add your LinkedIn)
-
 ---
 
 # ⭐ Support

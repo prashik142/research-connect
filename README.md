@@ -265,38 +265,6 @@ Database
 
 ---
 
-# 📸 Screenshots
-
-## Home Page
-
-_Add Screenshot_
-
----
-
-## Student Dashboard
-
-_Add Screenshot_
-
----
-
-## Professor Dashboard
-
-_Add Screenshot_
-
----
-
-## Project Details
-
-_Add Screenshot_
-
----
-
-## Application Page
-
-_Add Screenshot_
-
----
-
 # 📡 API Routes
 
 Authentication

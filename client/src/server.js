@@ -19,7 +19,7 @@ app.use("/api/users", userRoutes);
 app.get("/", (req, res) => {
   res.send("ResearchConnect Backend Running");
 });
-
+console.log("process.env.PORT =", process.env.PORT);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {

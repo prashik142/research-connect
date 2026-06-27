@@ -12,7 +12,7 @@ function FeaturedProjects() {
   const fetchProjects = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/projects"
+        "https://research-connect-jmno.onrender.com/api/projects"
       );
 
       // Show only the latest 6 projects

@@ -32,7 +32,7 @@ function Settings() {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        "http://localhost:5000/api/users/change-password",
+        "https://research-connect-jmno.onrender.com/api/users/change-password",
         {
           currentPassword: passwords.currentPassword,
           newPassword: passwords.newPassword,

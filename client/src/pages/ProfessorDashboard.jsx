@@ -22,7 +22,7 @@ function ProfessorDashboard() {
       
       // 1. Fetch Projects (Token included)
       const projectRes = await axios.get(
-        "http://localhost:5000/api/projects/my-projects",
+        "https://research-connect-jmno.onrender.com/api/projects/my-projects",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -35,7 +35,7 @@ function ProfessorDashboard() {
 
       // 2. Fetch Applications (ADDED Token here!)
       const appRes = await axios.get(
-        "http://localhost:5000/api/applications",
+        "https://research-connect-jmno.onrender.com/api/applications",
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -16,7 +16,7 @@ const [professor, setProfessor] = useState(null);
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        `http://localhost:5000/api/users/professor/${id}`,
+        `https://research-connect-jmno.onrender.com/api/users/professor/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -32,7 +32,7 @@ function EditProfile() {
         localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/users/profile",
+        "https://research-connect-jmno.onrender.com/api/users/profile",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -82,7 +82,7 @@ function EditProfile() {
 
     // Save profile details
     const profileRes = await axios.put(
-      "http://localhost:5000/api/users/profile",
+      "https://research-connect-jmno.onrender.com/api/users/profile",
       formData,
       {
         headers: {
@@ -97,7 +97,7 @@ function EditProfile() {
       data.append("resume", resume);
 
       const uploadRes = await axios.post(
-        "http://localhost:5000/api/users/upload-resume",
+        "https://research-connect-jmno.onrender.com/api/users/upload-resume",
         data,
         {
           headers: {
@@ -270,7 +270,7 @@ function EditProfile() {
 
   {formData.resumeUrl && (
     <a
-      href={`http://localhost:5000/uploads/${formData.resumeUrl}`}
+      href={`https://research-connect-jmno.onrender.com/uploads/${formData.resumeUrl}`}
       target="_blank"
       rel="noreferrer"
       className="text-blue-600 underline mt-3 inline-block"

@@ -15,7 +15,7 @@ function MyApplications() {
   const fetchApplications = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/applications"
+        "https://research-connect-jmno.onrender.com/api/applications"
       );
 
       const myApplications = res.data.filter(

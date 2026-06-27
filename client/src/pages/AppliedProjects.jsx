@@ -14,7 +14,7 @@ function AppliedProjects() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/applications/my-applications",
+        "https://research-connect-jmno.onrender.com/api/applications/my-applications",
         {
           headers: {
             Authorization: `Bearer ${token}`,

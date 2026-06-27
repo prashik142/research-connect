@@ -27,7 +27,7 @@ function CreateProject() {
       localStorage.getItem("token");
 
     await axios.post(
-      "http://localhost:5000/api/projects/create",
+      "https://research-connect-jmno.onrender.com/api/projects/create",
       {
         title: formData.title,
         description: formData.description,

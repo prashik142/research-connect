@@ -17,7 +17,7 @@ function StatsCards() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/users/dashboard",
+        "https://research-connect-jmno.onrender.com/api/users/dashboard",
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -18,7 +18,7 @@ function EditProject() {
 
   const fetchProject = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/projects/${id}`);
+      const res = await axios.get(`https://research-connect-jmno.onrender.com/api/projects/${id}`);
       setFormData({
         title: res.data.title || "",
         description: res.data.description || "",
@@ -41,7 +41,7 @@ function EditProject() {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `http://localhost:5000/api/projects/${id}`,
+        `https://research-connect-jmno.onrender.com/api/projects/${id}`,
         formData,
         {
           headers: {

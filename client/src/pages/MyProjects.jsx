@@ -15,7 +15,7 @@ function MyProjects() {
         localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/projects/my-projects",
+        "https://research-connect-jmno.onrender.com/api/projects/my-projects",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -34,7 +34,7 @@ const deleteProject = async (projectId) => {
       localStorage.getItem("token");
 
     await axios.delete(
-      `http://localhost:5000/api/projects/${projectId}`,
+      `https://research-connect-jmno.onrender.com/api/projects/${projectId}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,

@@ -14,7 +14,7 @@ function FeaturedProfessors() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/users/professors",
+        "https://research-connect-jmno.onrender.com/api/users/professors",
         {
           headers: {
             Authorization: `Bearer ${token}`,

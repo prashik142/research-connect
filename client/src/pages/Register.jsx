@@ -18,7 +18,7 @@ function Register() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://research-connect-jmno.onrender.com/api/auth/register",
         {
           name,
           email,
@@ -148,7 +148,7 @@ const handleRegister = async (e) => {
 
   try {
     await axios.post(
-      "http://localhost:5000/api/auth/register",
+      "https://research-connect-jmno.onrender.com/api/auth/register",
       {
         name: formData.name,
         email: formData.email,

@@ -17,13 +17,13 @@ function Notifications() {
       // Fallback for MongoDB _id just in case
       const userId = user.id || user._id;
 
-      const appRes = await axios.get("http://localhost:5000/api/applications", {
+      const appRes = await axios.get("https://research-connect-jmno.onrender.com/api/applications", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
 
-      const projectRes = await axios.get("http://localhost:5000/api/projects");
+      const projectRes = await axios.get("https://research-connect-jmno.onrender.com/api/projects");
 
       let data = [];
 

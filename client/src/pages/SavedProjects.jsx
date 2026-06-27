@@ -17,7 +17,7 @@ function SavedProjects() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/saved-projects/my-saved",
+        "https://research-connect-jmno.onrender.com/api/saved-projects/my-saved",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ function SavedProjects() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/applications/my-applications",
+        "https://research-connect-jmno.onrender.com/api/applications/my-applications",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -57,7 +57,7 @@ function SavedProjects() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/applications/apply",
+        "https://research-connect-jmno.onrender.com/api/applications/apply",
         {
           projectId,
         },
@@ -84,7 +84,7 @@ function SavedProjects() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/saved-projects/${projectId}`,
+        `https://research-connect-jmno.onrender.com/api/saved-projects/${projectId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

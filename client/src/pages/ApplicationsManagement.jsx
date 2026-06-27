@@ -15,12 +15,12 @@ function ApplicationsManagement() {
 
       const [appRes, projectRes] = await Promise.all([
         // 1. Added Authorization header to fetch all applications securely
-        axios.get("http://localhost:5000/api/applications", {
+        axios.get("https://research-connect-jmno.onrender.com/api/applications", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         }),
-        axios.get("http://localhost:5000/api/projects/my-projects", {
+        axios.get("https://research-connect-jmno.onrender.com/api/projects/my-projects", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -48,7 +48,7 @@ function ApplicationsManagement() {
 
       // 3. Fixed the template literal backticks and added the Authorization header
       await axios.patch(
-        `http://localhost:5000/api/applications/${applicationId}`,
+        `https://research-connect-jmno.onrender.com/api/applications/${applicationId}`,
         { status },
         {
           headers: {
@@ -195,7 +195,7 @@ function ApplicationsManagement() {
 
     {app.student?.resumeUrl && (
       <a
-        href={`http://localhost:5000/uploads/${app.student.resumeUrl}`}
+        href={`https://research-connect-jmno.onrender.com/uploads/${app.student.resumeUrl}`}
         target="_blank"
         rel="noreferrer"
         className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"

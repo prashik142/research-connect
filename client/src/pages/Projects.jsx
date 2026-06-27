@@ -15,7 +15,7 @@ function Projects() {
   const fetchProjects = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/projects"
+        "https://research-connect-jmno.onrender.com/api/projects"
       );
 
       setProjects(res.data);
@@ -29,7 +29,7 @@ function Projects() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/saved-projects/save",
+        "https://research-connect-jmno.onrender.com/api/saved-projects/save",
         { projectId },
         {
           headers: {

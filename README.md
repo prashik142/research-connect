@@ -13,10 +13,10 @@
 ## 🌐 Live Demo
 
 ### Frontend
-👉 https://YOUR-VERCEL-URL.vercel.app
+👉 https://research-connect-three.vercel.app/
 
 ### Backend API
-👉 https://YOUR-RENDER-URL.onrender.com
+👉 https://research-connect-jmno.onrender.com
 
 ---
 
